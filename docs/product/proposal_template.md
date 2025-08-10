@@ -32,7 +32,7 @@ Prepared by: NADOO‑IT
 - Network access for package install and optional API
 
 ## 6. Pricing
-- See `docs/product/pricing.md`. Final pricing to be confirmed based on headcount, logistics, and options.
+- See [pricing.md](./pricing.md). Final pricing to be confirmed based on headcount, logistics, and options.
 
 ## 7. Risks & Mitigations
 - Fingerprint lockouts → default touch‑only; PIN unlock SOP

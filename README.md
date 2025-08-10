@@ -83,9 +83,9 @@ Toggles:
 - Hot-plug: `max_devices=1` and the helper allow plugging the key after greeter appears; press Enter if needed.
 
 ## Onboarding & Runbook
-- Read-first team overview: `docs/handouts/read_first_fido2_rollout_guide.md`
-- One-day event runbook (up to 500 users): `docs/marketing/social_kit/event_runbook_1day_500.md`
-- Full work plan: `docs/work_plan.md`
+- [Read-first team overview](./docs/handouts/read_first_fido2_rollout_guide.md)
+- [One-day event runbook (up to 500 users)](./docs/marketing/social_kit/event_runbook_1day_500.md)
+- [Full work plan](./docs/work_plan.md)
 
 ## Verification and rerun
 - After each run, the scripts perform quick checks (device present, U2F mapping file exists, pam_u2f configured).

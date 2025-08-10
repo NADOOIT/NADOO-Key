@@ -23,7 +23,7 @@ Goal: Enable you to confidently sell and deliver the 1‑day rollout
 - Linux login + sudo via pam_u2f, hot‑plug helper, robust defaults
 - Batch/factory mode with CSV logging and optional integration hook (per‑key API)
 - Assets: social kit, event runbook, webinar script, Q&A, handouts (EN/DE)
-- "Read First" overview for teams: `docs/handouts/read_first_fido2_rollout_guide.md`
+- "Read First" overview for teams: [read_first_fido2_rollout_guide.md](./read_first_fido2_rollout_guide.md)
 
 ---
 
@@ -32,7 +32,7 @@ Goal: Enable you to confidently sell and deliver the 1‑day rollout
 - Day‑of: follow the runbook waves (4×125), verify login/sudo per user, log to CSV, optional service registration
 - Aftercare: deliver CSV/report, backups/replacements SOP, follow‑up check
 
-See: `docs/marketing/social_kit/event_runbook_1day_500.md`
+See: [event_runbook_1day_500.md](../marketing/social_kit/event_runbook_1day_500.md)
 
 ---
 
@@ -63,9 +63,9 @@ See: `docs/marketing/social_kit/event_runbook_1day_500.md`
 ---
 
 ## Next steps for colleagues
-- Skim the overview: `docs/handouts/read_first_fido2_rollout_guide.md`
-- Review the runbook: `docs/marketing/social_kit/event_runbook_1day_500.md`
-- Use social/email kit to book discovery calls: `docs/marketing/social_kit/`
+ - Skim the overview: [read_first_fido2_rollout_guide.md](./read_first_fido2_rollout_guide.md)
+ - Review the runbook: [event_runbook_1day_500.md](../marketing/social_kit/event_runbook_1day_500.md)
+ - Use social/email kit to book discovery calls: [social_kit](../marketing/social_kit/)
 - Rehearse the 3‑minute demo; schedule a pilot or set a 1‑day date
 
 Contacts: Christoph Backhaus (IT/Security) – Support and delivery

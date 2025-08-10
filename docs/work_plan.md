@@ -38,5 +38,5 @@ REQUIRE_UV_LOGIN=1 REQUIRE_UV_SUDO=1 sudo ./bin/nadoo-key provision
 - Handouts provided to users; helpdesk briefed.
 
 ## Links
-- Read-first: `handouts/read_first_fido2_rollout_guide.md`
-- Event runbook (1-day): `marketing/social_kit/event_runbook_1day_500.md`
+- [Read-first](./handouts/read_first_fido2_rollout_guide.md)
+- [Event runbook (1-day)](./marketing/social_kit/event_runbook_1day_500.md)

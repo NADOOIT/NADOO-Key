@@ -45,28 +45,28 @@ Key defaults & notes:
 ---
 
 ## One‑day rollout (up to 500)
-- Read the runbook: `docs/marketing/social_kit/event_runbook_1day_500.md`
+- Read the runbook: [event_runbook_1day_500.md](../marketing/social_kit/event_runbook_1day_500.md)
 - Stations, timeline, CSV logging, and roles are defined. Use handouts below for comms.
 
 ---
 
 ## Deep dives (read as needed)
 - Business value and ROI
-  - EN: `docs/handouts/fido2_customer_handout.md`
-  - DE: `docs/handouts/fido2_kundenhandout.md`
-  - Pricing & packages: `docs/product/pricing.md`
-  - Product plan: `docs/product/product_plan.md`
+  - EN: [fido2_customer_handout.md](./fido2_customer_handout.md)
+  - DE: [fido2_kundenhandout.md](./fido2_kundenhandout.md)
+  - Pricing & packages: [pricing.md](../product/pricing.md)
+  - Product plan: [product_plan.md](../product/product_plan.md)
 - Stakeholder handouts (share with teams)
-  - End‑user: EN `docs/handouts/fido2_end_user_quick_start.md`, DE `docs/handouts/fido2_end_user_kurzanleitung.md`
-  - Managers: EN `docs/handouts/fido2_manager_brief.md`, DE `docs/handouts/fido2_manager_kurzuebersicht.md`
-  - Helpdesk SOP: EN `docs/handouts/fido2_helpdesk_sop.md`, DE `docs/handouts/fido2_helpdesk_sop_de.md`
-  - Older employees guide: EN `docs/handouts/fido2_older_adults_guide.md`, DE `docs/handouts/fido2_aeltere_benutzer_leitfaden.md`
+  - End‑user: EN [fido2_end_user_quick_start.md](./fido2_end_user_quick_start.md), DE [fido2_end_user_kurzanleitung.md](./fido2_end_user_kurzanleitung.md)
+  - Managers: EN [fido2_manager_brief.md](./fido2_manager_brief.md), DE [fido2_manager_kurzuebersicht.md](./fido2_manager_kurzuebersicht.md)
+  - Helpdesk SOP: EN [fido2_helpdesk_sop.md](./fido2_helpdesk_sop.md), DE [fido2_helpdesk_sop_de.md](./fido2_helpdesk_sop_de.md)
+  - Older employees guide: EN [fido2_older_adults_guide.md](./fido2_older_adults_guide.md), DE [fido2_aeltere_benutzer_leitfaden.md](./fido2_aeltere_benutzer_leitfaden.md)
 - Marketing & launch (optional)
-  - Social kit (EN/DE): `docs/marketing/social_kit/README.md`
-  - Landing page copy: EN `landing_page_copy_en.md`, DE `landing_page_copy_de.md`
+  - Social kit (EN/DE): [social kit](../marketing/social_kit/README.md)
+  - Landing page copy: EN [landing_page_copy_en.md](../marketing/social_kit/landing_page_copy_en.md), DE [landing_page_copy_de.md](../marketing/social_kit/landing_page_copy_de.md)
 - Engineering details
-  - CLI usage: `README.md`
-  - Developer setup: `docs/start_here.md`
+  - CLI usage: [README.md](../../README.md)
+  - Developer setup: [start_here.md](../start_here.md)
 
 ---
 
@@ -87,7 +87,7 @@ Key defaults & notes:
 
 ## Next steps
 - Pick policy and date. If doing 1‑day rollout, follow the runbook and use the handouts.
-- For a quote, see `docs/product/pricing.md` or use the proposal template: `docs/product/proposal_template.md`.
+- For a quote, see [pricing.md](../product/pricing.md) or use the proposal template: [proposal_template.md](../product/proposal_template.md).
 
 ---
 

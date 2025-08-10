@@ -43,8 +43,8 @@ sudo ./bin/nadoo-key factory
 - Mapping file is created automatically (per-user or system-wide as needed); no manual edits.
 
 ## Troubleshooting
-- Helpdesk SOP (EN): `docs/handouts/fido2_helpdesk_sop.md`
-- Helpdesk SOP (DE): `docs/handouts/fido2_helpdesk_sop_de.md`
+ - Helpdesk SOP (EN): [./handouts/fido2_helpdesk_sop.md](./handouts/fido2_helpdesk_sop.md)
+ - Helpdesk SOP (DE): [./handouts/fido2_helpdesk_sop_de.md](./handouts/fido2_helpdesk_sop_de.md)
 
 ## Contact
 - Support: Christoph Backhaus

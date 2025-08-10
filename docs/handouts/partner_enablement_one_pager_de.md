@@ -23,7 +23,7 @@ Ziel: Kolleg:innen befähigen, den 1‑Tages‑Rollout sicher zu verkaufen und z
 - Linux‑Login + sudo via pam_u2f, Hot‑Plug‑Helfer, robuste Defaults
 - Batch/Factory‑Modus mit CSV‑Logging und optionalem Integrations‑Hook (pro Schlüssel API)
 - Assets: Social Kit, Event‑Runbook, Webinar‑Skript, Q&A, Handouts (DE/EN)
-- „Read First” Überblick für Teams: `docs/handouts/read_first_fido2_rollout_guide.md`
+- „Read First” Überblick für Teams: [read_first_fido2_rollout_guide.md](./read_first_fido2_rollout_guide.md)
 
 ---
 
@@ -32,7 +32,7 @@ Ziel: Kolleg:innen befähigen, den 1‑Tages‑Rollout sicher zu verkaufen und z
 - Rollout‑Tag: Wellen (4×125) gemäß Runbook, Login/sudo je Nutzer verifizieren, CSV pflegen, optional Service‑Registrierung
 - Danach: CSV/Report übergeben, Backup/Replacement‑SOP, Follow‑up Termin
 
-Siehe: `docs/marketing/social_kit/event_runbook_1day_500.md`
+Siehe: [event_runbook_1day_500.md](../marketing/social_kit/event_runbook_1day_500.md)
 
 ---
 
@@ -63,9 +63,9 @@ Siehe: `docs/marketing/social_kit/event_runbook_1day_500.md`
 ---
 
 ## Nächste Schritte für Kolleg:innen
-- Überblick lesen: `docs/handouts/read_first_fido2_rollout_guide.md`
-- Runbook prüfen: `docs/marketing/social_kit/event_runbook_1day_500.md`
-- Social/Email‑Kit für Discovery‑Calls nutzen: `docs/marketing/social_kit/`
+ - Überblick lesen: [read_first_fido2_rollout_guide.md](./read_first_fido2_rollout_guide.md)
+ - Runbook prüfen: [event_runbook_1day_500.md](../marketing/social_kit/event_runbook_1day_500.md)
+ - Social/Email‑Kit für Discovery‑Calls nutzen: [social_kit](../marketing/social_kit/)
 - 3‑Minuten‑Demo üben; Pilot ansetzen oder 1‑Tages‑Termin festlegen
 
 Kontakt: Christoph Backhaus (IT/Security) – Support und Delivery
