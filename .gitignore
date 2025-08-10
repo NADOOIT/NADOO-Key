@@ -1,0 +1,8 @@
+# nadoo-key ignores
+.DS_Store
+*.log
+.tmp/
+/dist/
+/node_modules/
+/venv/
+.venv/

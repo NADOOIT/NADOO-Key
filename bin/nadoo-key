@@ -1,0 +1,77 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+OS="$(uname -s | tr '[:upper:]' '[:lower:]')"
+
+usage() {
+  cat <<EOF
+nadoo-key — one-button provisioning and registration of FIDO2 security keys
+
+Usage:
+  nadoo-key provision     # full guided provisioning (prompts)
+  nadoo-key register      # just register this key with your computer
+  nadoo-key reset         # reset FIDO2 application on the key (ERASES credentials)
+  nadoo-key factory       # batch/factory mode to provision many keys with optional service hook
+  nadoo-key vault         # manage local encrypted vault (create/open/close/status)
+  nadoo-key help          # show this help
+
+Environment:
+  REQUIRE_U2F=1 REQUIRE_UV=1 FORCE=1  # enforce key-only + user verification
+  FINGERPRINTS=N                      # auto-enroll N fingerprints on Bio keys
+  REQUIRE_UV_LOGIN=0|1                # login: require fingerprint/PIN (default 0)
+  REQUIRE_UV_SUDO=0|1                 # sudo: require fingerprint/PIN (default 0)
+  FACTORY_COUNT=N                     # factory: number of keys to process then exit
+  FACTORY_RESET=0|1                   # factory: reset FIDO2 app before provisioning (default 0)
+  SERVICE_HOOK=PATH                   # factory: per-key integration hook executable
+  OUTPUT_CSV=PATH                     # factory: path to output CSV log
+EOF
+}
+
+case "${1:-}" in
+  provision)
+    case "$OS" in
+      linux*) exec "$ROOT_DIR/scripts/linux/provision.sh" ;;
+      darwin*) exec "$ROOT_DIR/scripts/macos/provision.sh" ;;
+      *) echo "Unsupported OS: $OS" >&2; exit 1 ;;
+    esac
+    ;;
+  register)
+    case "$OS" in
+      linux*) exec "$ROOT_DIR/scripts/linux/register.sh" ;;
+      darwin*) echo "TODO: macOS register (pam_u2f)"; exit 1 ;;
+      *) echo "Unsupported OS: $OS" >&2; exit 1 ;;
+    esac
+    ;;
+  factory)
+    case "$OS" in
+      linux*) exec "$ROOT_DIR/scripts/linux/factory.sh" ;;
+      darwin*) echo "Factory mode not implemented on macOS yet."; exit 1 ;;
+      *) echo "Unsupported OS: $OS" >&2; exit 1 ;;
+    esac
+    ;;
+  reset)
+    case "$OS" in
+      linux*) exec "$ROOT_DIR/scripts/linux/reset.sh" ;;
+      darwin*) echo "Use ykman fido reset (macOS stub)"; exit 1 ;;
+      *) echo "Unsupported OS: $OS" >&2; exit 1 ;;
+    esac
+    ;;
+  vault)
+    shift || true
+    case "$OS" in
+      linux*) exec "$ROOT_DIR/scripts/linux/vault.sh" "$@" ;;
+      darwin*) echo "Vault not supported on macOS in this repo yet."; exit 1 ;;
+      *) echo "Unsupported OS: $OS" >&2; exit 1 ;;
+    esac
+    ;;
+  help|--help|-h|"")
+    usage
+    ;;
+  *)
+    echo "Unknown command: ${1}" >&2
+    usage
+    exit 1
+    ;;
+esac
