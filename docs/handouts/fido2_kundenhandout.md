@@ -56,10 +56,10 @@ Ziel: Was ist FIDO2, warum ist es wichtig, wie führt man es ein, wer nutzt es, 
 
 ## Einführungsvarianten
 - Geführtes One‑Button‑Provisioning:
-  - `sudo ./nadoo-key/bin/nadoo-key provision`
+  - `sudo ./bin/nadoo-key provision`
   - Installiert Pakete, erkennt den Schlüssel, initialisiert neue Schlüssel mit PIN = 0000, optional Fingerprint‑Enrollment, konfiguriert PAM für sudo und Login.
 - Factory‑/Massen‑Provisionierung:
-  - `FACTORY_COUNT=100 sudo ./nadoo-key/bin/nadoo-key factory`
+  - `FACTORY_COUNT=100 sudo ./bin/nadoo-key factory`
   - Optionen: `FACTORY_RESET=1` (vor Ausgabe löschen), `FINGERPRINTS=N`, `REQUIRE_UV_LOGIN=0|1`, `REQUIRE_UV_SUDO=0|1`, `SERVICE_URL=...` für externe Registrierung, `OUTPUT_CSV` für Logging.
 - Nutzerfreundliche Defaults:
   - Touch‑only‑Login (keine Fingerabdruck/PIN‑Abfrage) verhindert Bio‑Sperren; Fingerprint optional.

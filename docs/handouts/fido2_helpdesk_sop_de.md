@@ -9,18 +9,18 @@ Zielgruppe: IT‑Support / Service Desk
 - Fingerprint‑Lockout? Nutzer einmal zur PIN‑Eingabe auffordern.
 
 ## Häufige Abhilfen
-- Mapping neu registrieren: `sudo ./nadoo-key/bin/nadoo-key register`
-- Nutzer neu provisionieren: `sudo ./nadoo-key/bin/nadoo-key provision`
+- Mapping neu registrieren: `sudo ./bin/nadoo-key register`
+- Nutzer neu provisionieren: `sudo ./bin/nadoo-key provision`
 - PAM‑Optionen aktualisieren (Touch‑only vs Fingerprint): `REQUIRE_UV_LOGIN`/`REQUIRE_UV_SUDO` setzen und mit `FORCE=1` erneut ausführen.
 - Device‑Regeln: Provisionierung erneut starten (udev reload); Pakete `libfido2`, `pam_u2f` prüfen.
 
 ## Schlüssel ersetzen/hinzufügen
 1) Backup‑Schlüssel ausgeben.
-2) Registrieren: `sudo ./nadoo-key/bin/nadoo-key register` (Nutzer berührt den Schlüssel).
+2) Registrieren: `sudo ./bin/nadoo-key register` (Nutzer berührt den Schlüssel).
 3) Altes Mapping bei Bedarf entfernen.
 
 ## Factory‑Modus (Massen)
-- Befehl: `FACTORY_COUNT=N sudo ./nadoo-key/bin/nadoo-key factory`
+- Befehl: `FACTORY_COUNT=N sudo ./bin/nadoo-key factory`
 - Optionen: `FACTORY_RESET=1`, `FINGERPRINTS=N`, `SERVICE_URL=...` (pro Schlüssel API), `OUTPUT_CSV=...`
 
 ## Eskalation

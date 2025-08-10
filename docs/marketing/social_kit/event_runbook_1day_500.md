@@ -24,7 +24,7 @@ Day‑of Timeline
 - 16:00 Final verification, reports, handoff
 
 Station Procedure (per user)
-1) Insert key → `nadoo-key provision` (defaults: PIN 0000 for new; touch‑only login; UV optional)
+1) Insert key → `sudo ./bin/nadoo-key provision` (defaults: PIN 0000 for new; touch‑only login; UV optional)
 2) Verify sudo + lock screen; capture mapping line
 3) CSV log: user, serial, status; optional POST to SERVICE_URL
 

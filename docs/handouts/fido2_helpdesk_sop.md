@@ -9,18 +9,18 @@ Audience: IT support / service desk
 - Fingerprint lockout? Prompt user for PIN once to clear.
 
 ## Common fixes
-- Re‑register key mapping: `sudo ./nadoo-key/bin/nadoo-key register`
-- Re‑provision user: `sudo ./nadoo-key/bin/nadoo-key provision`
+- Re‑register key mapping: `sudo ./bin/nadoo-key register`
+- Re‑provision user: `sudo ./bin/nadoo-key provision`
 - Refresh PAM options (touch‑only vs fingerprint): set `REQUIRE_UV_LOGIN`/`REQUIRE_UV_SUDO` and rerun provisioning with `FORCE=1`.
 - Device rules: run provisioning to reload udev; verify `libfido2`, `pam_u2f` packages.
 
 ## Replace or add key
 1) Issue backup key.
-2) Register: `sudo ./nadoo-key/bin/nadoo-key register` (user touches key).
+2) Register: `sudo ./bin/nadoo-key register` (user touches key).
 3) Remove old mapping if needed.
 
 ## Factory mode (batch)
-- Command: `FACTORY_COUNT=N sudo ./nadoo-key/bin/nadoo-key factory`
+- Command: `FACTORY_COUNT=N sudo ./bin/nadoo-key factory`
 - Options: `FACTORY_RESET=1`, `FINGERPRINTS=N`, `SERVICE_URL=...` (per‑key API), `OUTPUT_CSV=...`
 
 ## Escalation

@@ -56,10 +56,10 @@ Goal: Explain what this is, why it matters, how to deploy, who else uses it, ris
 
 ## Deployment Options
 - One‑button provisioning (guided):
-  - `sudo ./nadoo-key/bin/nadoo-key provision`
+  - `sudo ./bin/nadoo-key provision`
   - Installs packages, detects the key, initializes new keys with PIN = 0000, optionally enrolls fingerprints, configures PAM for sudo and login.
 - Factory (batch) provisioning for many keys:
-  - `FACTORY_COUNT=100 sudo ./nadoo-key/bin/nadoo-key factory`
+  - `FACTORY_COUNT=100 sudo ./bin/nadoo-key factory`
   - Options: `FACTORY_RESET=1` (wipe before issue), `FINGERPRINTS=N`, `REQUIRE_UV_LOGIN=0|1`, `REQUIRE_UV_SUDO=0|1`, `SERVICE_URL=...` for external registration, `OUTPUT_CSV` logging.
 - Defaults optimized for smooth experience:
   - Touch‑only login (no fingerprint/PIN prompts) to avoid biometric lockouts; fingerprint optional.

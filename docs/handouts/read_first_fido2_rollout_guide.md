@@ -34,7 +34,7 @@ Audience: Executives, IT/Security leads, managers, helpdesk, and project team.
   FACTORY_COUNT=500 \
   REQUIRE_UV_LOGIN=0 REQUIRE_UV_SUDO=0 \
   OUTPUT_CSV=provisioned.csv \
-  sudo ./nadoo-key/bin/nadoo-key factory
+  sudo ./bin/nadoo-key factory
   ```
   Options: `FACTORY_RESET=1` (wipe before issue), `FINGERPRINTS=N`, `SERVICE_URL=https://...` (per‑key registration).
 
@@ -65,7 +65,7 @@ Key defaults & notes:
   - Social kit (EN/DE): `docs/marketing/social_kit/README.md`
   - Landing page copy: EN `landing_page_copy_en.md`, DE `landing_page_copy_de.md`
 - Engineering details
-  - CLI usage: `nadoo-key/README.md`
+  - CLI usage: `README.md`
   - Developer setup: `docs/start_here.md`
 
 ---
