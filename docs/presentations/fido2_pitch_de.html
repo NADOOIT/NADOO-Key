@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NADOO‑Key – FIDO2 Präsentation (DE)</title>
+  <style>
+    :root { --bg:#0b1020; --fg:#eef2ff; --muted:#9aa3b2; --accent:#6cf; }
+    html,body { height:100%; margin:0; background:var(--bg); color:var(--fg); font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .deck { height:100%; display:flex; align-items:center; justify-content:center; }
+    .slide { display:none; max-width: 1200px; padding: 48px; box-sizing: border-box; }
+    .slide.active { display:block; }
+    h1,h2 { margin: 0 0 16px 0; line-height:1.1; }
+    h1 { font-size: 56px; }
+    h2 { font-size: 40px; }
+    p, li { font-size: 24px; line-height:1.5; color: var(--fg); }
+    .subtitle { color: var(--muted); margin-top: 8px; font-size: 22px; }
+    .two-col { display:grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items:center; }
+    .hero-img { width:100%; max-height: 420px; object-fit: contain; border-radius: 12px; background:#141a2e; }
+    .credit { font-size: 14px; color: var(--muted); margin-top: 8px; }
+    .ref { font-size: 16px; color: var(--muted); }
+    .kbd { display:inline-block; padding:2px 8px; border:1px solid #667; border-radius:6px; color:#cfe; font-size: 18px; }
+    .footer { position: fixed; left:24px; right:24px; bottom:18px; display:flex; justify-content:space-between; color: var(--muted); font-size: 16px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .bullets { margin: 12px 0 0 0; }
+    .bullets li { margin: 6px 0; }
+    @media print {
+      body { background: #fff; color: #000; }
+      .deck { height: auto; }
+      .slide { display: block !important; page-break-after: always; max-width: 100%; padding: 32px; }
+      .slide:last-child { page-break-after: auto; }
+      .footer { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+<div class="deck">
+  <!-- Folie 1: Titel -->
+  <section class="slide active" data-title="Titel">
+    <h1>NADOO‑Key</h1>
+    <h2>Phishing‑resistenter Login mit FIDO2</h2>
+    <p class="subtitle">Standard: Touch‑only · Fingerabdruck optional · Massen‑Provisionierung an einem Tag</p>
+    <p class="ref">Datum: 2025‑08‑10 · Kontakt: Christoph Backhaus</p>
+  </section>
+
+  <!-- Folie 2: Was ist FIDO2? -->
+  <section class="slide" data-title="Was ist FIDO2">
+    <div class="two-col">
+      <div>
+        <h2>Was ist ein FIDO2‑Sicherheitsschlüssel?</h2>
+        <ul class="bullets">
+          <li>Kleines USB/NFC‑Gerät für kryptografischen Login per Berührung</li>
+          <li>Keine geteilten Geheimnisse; resistent gegen Phishing, Replay, OTP‑Missbrauch</li>
+          <li>Funktioniert plattformweit für Web‑Apps; Linux OS‑Login heute</li>
+        </ul>
+      </div>
+      <div>
+        <img class="hero-img" alt="YubiKey Gerät" src="https://commons.wikimedia.org/wiki/Special:FilePath/YubiKey%205%20NFC.png" />
+        <div class="credit">Bild: „YubiKey 5 NFC.png“, via Wikimedia Commons (Lizenz siehe Quellseite)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Folie 3: Warum FIDO2 -->
+  <section class="slide" data-title="Warum FIDO2">
+    <h2>Warum FIDO2</h2>
+    <ul class="bullets">
+      <li><b>Stoppt Phishing</b>: Challenge‑Response an Webseiten‑Ursprung gebunden</li>
+      <li><b>Schnellere UX</b>: 1‑Touch Login; keine Codes, keine SMS</li>
+      <li><b>Geringere Kosten</b>: weniger Passwort‑Resets und Lockouts</li>
+      <li><b>Skaliert</b>: Factory‑Provisioning & CSV‑Logging bis 500 Nutzer/Tag</li>
+    </ul>
+  </section>
+
+  <!-- Folie 4: Was erwartet euch -->
+  <section class="slide" data-title="Erwartungen">
+    <h2>Was euch erwartet</h2>
+    <ul class="bullets">
+      <li>Defaults: PIN 0000 bei neuen Keys, <b>Touch‑only Login</b>, Fingerabdruck optional</li>
+      <li>Linux Login + sudo (inkl. GNOME‑Sperrbildschirm); Web‑Apps auf allen Plattformen</li>
+      <li>Hot‑Plug‑fähig: Schlüssel bei Aufforderung einstecken und berühren</li>
+    </ul>
+  </section>
+
+  <!-- Folie 5: Cyber in Deutschland -->
+  <section class="slide" data-title="Cyber DE">
+    <div class="two-col">
+      <div>
+        <h2>Cybersicherheit in Deutschland</h2>
+        <ul class="bullets">
+          <li><b>8 von 10 Unternehmen</b> betroffen von Datendiebstahl, Spionage oder Sabotage (2023/24)</li>
+          <li><b>267 Mrd. €</b> Gesamtschaden; ~2/3 durch Cyberangriffe (Bitkom 2024)</li>
+          <li>BSI 2024: anhaltend hohes Bedrohungsniveau; Ransomware & Phishing zentral</li>
+        </ul>
+        <p class="ref">Quellen: <a href="https://www.bitkom.org/Presse/Presseinformation/Wirtschaftsschutz-2024" target="_blank" rel="noopener">Bitkom Wirtschaftsschutz 2024</a> · <a href="https://www.bsi.bund.de/DE/Service-Navi/Publikationen/Lagebericht/lagebericht_node.html" target="_blank" rel="noopener">BSI Lagebericht 2024</a></p>
+      </div>
+      <div>
+        <img class="hero-img" alt="Beispiel Phishing‑E‑Mail" src="https://commons.wikimedia.org/wiki/Special:FilePath/Example_bank_phishing_email.svg" />
+        <div class="credit">Bild: „Example bank phishing email.svg“, via Wikimedia Commons (CC‑BY‑SA‑4.0)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Folie 6: Marktgröße -->
+  <section class="slide" data-title="Marktgröße">
+    <h2>Markt für Passwortlos (global)</h2>
+    <ul class="bullets">
+      <li>Volumen ≈ <b>21 Mrd. USD (2024)</b>; Prognose ≈ <b>55–60 Mrd. USD bis 2030–2032</b></li>
+      <li>Treiber: Phishing‑Risiko, Compliance, UX, Plattform‑Support</li>
+    </ul>
+    <p class="ref">Quellen: <a href="https://www.grandviewresearch.com/industry-analysis/passwordless-authentication-market-report" target="_blank" rel="noopener">Grand View Research 2024</a> · <a href="https://www.fortunebusinessinsights.com/passwordless-authentication-market-109838" target="_blank" rel="noopener">Fortune Business Insights 2024</a></p>
+  </section>
+
+  <!-- Folie 7: Adoption -->
+  <section class="slide" data-title="Adoption">
+    <h2>Passkey‑Adoption</h2>
+    <ul class="bullets">
+      <li>2024: über <b>15 Milliarden Online‑Konten</b> können Passkeys nutzen</li>
+      <li>Unternehmen berichten über schnellere Logins und weniger Account‑Recovery</li>
+    </ul>
+    <p class="ref">Quelle: <a href="https://fidoalliance.org/passkey-adoption-doubles-in-2024-more-than-15-billion-online-accounts-can-leverage-passkeys/" target="_blank" rel="noopener">FIDO Alliance (2024)</a></p>
+  </section>
+
+  <!-- Folie 8: Wie wir Risiko senken -->
+  <section class="slide" data-title="Risikoreduktion">
+    <h2>Wie NADOO‑Key Angriffe verhindert</h2>
+    <ul class="bullets">
+      <li><b>Eliminiert phishbare Passwörter/OTPs</b> in abgedeckten Systemen</li>
+      <li><b>Touch‑only Standard</b> vermeidet Fingerprint‑Lockouts und Support‑Friktion</li>
+      <li>Skripted Provisioning + PAM‑Härtung; Mapping & Berechtigungen automatisiert</li>
+      <li>Factory‑Modus für schnelle, konsistente Ausrollung; CSV für Audit & Aftercare</li>
+    </ul>
+  </section>
+
+  <!-- Folie 9: Technisch -->
+  <section class="slide" data-title="Technik">
+    <h2>Wie es technisch funktioniert (Linux)</h2>
+    <ul class="bullets">
+      <li>PAM U2F für Login und sudo, mit <code>openasuser</code> und Hot‑Plug‑Helfer</li>
+      <li>Benutzer‑ oder systemweites Mapping; korrekte Berechtigungen erzwungen</li>
+      <li>YubiKey Bio: Fingerabdruck optional; Mehrfinger‑Enrollment unterstützt</li>
+    </ul>
+  </section>
+
+  <!-- Folie 10: Nächste Schritte -->
+  <section class="slide" data-title="Next steps">
+    <h2>Nächste Schritte</h2>
+    <ul class="bullets">
+      <li>Policy wählen: Touch‑only vs. Fingerabdruckpflicht für Login/sudo</li>
+      <li>Pilot oder 1‑Tages‑Rollout (bis 500 Nutzer) terminieren</li>
+      <li>Handouts & Social Kit nutzen; Details im Repository</li>
+    </ul>
+    <p class="ref">Docs: <a href="../handouts/read_first_fido2_rollout_guide.md">Read‑First Überblick</a> · <a href="../marketing/social_kit/event_runbook_1day_500.md">Runbook</a></p>
+  </section>
+</div>
+
+<div class="footer">
+  <div>Taste <span class="kbd">→</span> / <span class="kbd">←</span> oder Seitenklick • F für Vollbild</div>
+  <div>NADOO‑Key</div>
+</div>
+
+<script>
+(function(){
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  let i = 0;
+  function show(idx){ slides.forEach(s=>s.classList.remove('active')); slides[idx].classList.add('active'); i = idx; document.title = slides[idx].dataset.title + ' — NADOO‑Key'; }
+  function next(){ show((i+1) % slides.length); }
+  function prev(){ show((i-1+slides.length) % slides.length); }
+  window.addEventListener('keydown', (e)=>{
+    if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') next();
+    if (e.key === 'ArrowLeft'  || e.key === 'PageUp'   ) prev();
+    if (e.key.toLowerCase() === 'f') {
+      if (!document.fullscreenElement) document.documentElement.requestFullscreen().catch(()=>{});
+      else document.exitFullscreen().catch(()=>{});
+    }
+  });
+  window.addEventListener('click', (e)=>{ const mid = window.innerWidth/2; if (e.clientX > mid) next(); else prev(); });
+})();
+</script>
+</body>
+</html>

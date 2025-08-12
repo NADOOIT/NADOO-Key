@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Start NADOO‑Key Installer
+Comment=Run NADOO‑Key provisioning (Linux)
+Exec=sh -c './start_linux.sh'
+Path=
+Terminal=true
+Categories=Utility;
