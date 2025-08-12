@@ -12,6 +12,14 @@ Achtung: Das Zurücksetzen löscht alle FIDO/WebAuthn‑Zugänge auf dem Schlüs
   ```
 - Danach finden Sie die App im Menü: „NADOO‑Key: FIDO2 zurücksetzen“
 
+### Automatisches Entsperren beim Einstecken
+- Im Rahmen der Standard‑Einrichtung installiert NADOO‑Key einen Benutzerdienst, der nach der Anmeldung automatisch läuft.
+- Stecken Sie einen (ggf. gesperrten, rotes Blinken) FIDO2‑Schlüssel ein, erscheint ein Dialog zur PIN‑Eingabe (Standard 0000). Die biometrische Sperre wird ohne Datenverlust aufgehoben.
+- Deaktivieren/Entfernen (optional):
+  ```bash
+  ./tools/auto_unlock/install.sh uninstall
+  ```
+
 ### Nicht‑destruktive Wiederherstellung (ohne Datenverlust)
 - Zusätzlich wird die App „NADOO‑Key: FIDO2 wiederherstellen (ohne Datenverlust)“ installiert.
 - Diese hebt bei Bio‑Schlüsseln die Fingerabdruck‑Sperre (rotes Blinken) durch eine PIN‑Prüfung auf – ohne gespeicherte FIDO/WebAuthn‑Zugänge zu löschen.

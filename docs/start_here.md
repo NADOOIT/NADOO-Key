@@ -42,6 +42,20 @@ sudo ./bin/nadoo-key factory
 - Provisioning installs required packages and configures PAM U2F for sudo and login.
 - Mapping file is created automatically (per-user or system-wide as needed); no manual edits.
 
+## Auto‑Unlock (niedrige Hürde zum Entsperren)
+- Beim Provisionieren/Registrieren wird standardmäßig ein Benutzer‑Dienst installiert, der nach der Anmeldung automatisch läuft.
+- Verhalten: Stecken Sie einen (ggf. gesperrten) FIDO2‑Schlüssel ein → kurzer Hinweisdialog → PIN eingeben (Standard 0000) → biometrische Sperre wird aufgehoben. Es werden keine Anmeldedaten gelöscht.
+- Deaktivieren: vor dem Befehl `AUTO_UNLOCK=0` setzen, z. B. `AUTO_UNLOCK=0 sudo ./bin/nadoo-key provision`.
+- Manuelle Steuerung:
+  ```bash
+  # Installieren/aktivieren (Benutzerdienst)
+  ./tools/auto_unlock/install.sh install
+
+  # Deaktivieren/entfernen
+  ./tools/auto_unlock/install.sh uninstall
+  ```
+Hinweis: Erfordert `zenity`, `yubikey-manager` (ykman) und `fido2-tools`. Der Installer versucht die Pakete automatisch zu installieren.
+
 ## Troubleshooting
  - Helpdesk SOP (EN): [./handouts/fido2_helpdesk_sop.md](./handouts/fido2_helpdesk_sop.md)
  - Helpdesk SOP (DE): [./handouts/fido2_helpdesk_sop_de.md](./handouts/fido2_helpdesk_sop_de.md)
